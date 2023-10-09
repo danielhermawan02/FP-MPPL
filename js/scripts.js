@@ -24,3 +24,18 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
 });
+
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting by default
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Example: Check if username and password are correct (usually done on the server)
+    if (username === "your_username" && password === "your_password") {
+        alert("Login successful!");
+
+    // Redirect to a new page or perform other actions upon successful login
+    } else {
+        alert("Invalid username or password");
+    }
+});
